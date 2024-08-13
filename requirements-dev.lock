@@ -10,6 +10,8 @@
 #   universal: false
 
 -e file:.
+annotated-types==0.7.0
+    # via pydantic
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
@@ -20,17 +22,49 @@ kiwisolver==1.4.5
     # via matplotlib
 matplotlib==3.9.2
     # via adhoc-trial
+multimethod==1.10
+    # via pandera
+mypy-extensions==1.0.0
+    # via typing-inspect
 numpy==2.0.1
     # via adhoc-trial
     # via contourpy
     # via matplotlib
+    # via pandas
+    # via pandera
 packaging==24.1
     # via matplotlib
+    # via pandera
+pandas==2.2.2
+    # via adhoc-trial
+    # via pandera
+pandera==0.20.3
+    # via adhoc-trial
 pillow==10.4.0
     # via matplotlib
+pydantic==2.8.2
+    # via pandera
+pydantic-core==2.20.1
+    # via pydantic
 pyparsing==3.1.2
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via matplotlib
+    # via pandas
+pytz==2024.1
+    # via pandas
 six==1.16.0
     # via python-dateutil
+typeguard==4.3.0
+    # via pandera
+typing-extensions==4.12.2
+    # via pydantic
+    # via pydantic-core
+    # via typeguard
+    # via typing-inspect
+typing-inspect==0.9.0
+    # via pandera
+tzdata==2024.1
+    # via pandas
+wrapt==1.16.0
+    # via pandera
