@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import pandera as pa
 from pandera.typing import DataFrame
-from .schema import SalesDataSchema
+from data_processor.schema import SalesDataSchema
 
 
 @pa.check_types
