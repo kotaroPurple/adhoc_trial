@@ -8,6 +8,7 @@ dependencies = [
     "pandas>=2.2.2",
     "pandera>=0.20.3",
     "ipykernel>=6.29.5",
+    "pytest>=8.3.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -25,3 +26,9 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/adhoc_trial"]
+
+[tool.pytest.ini_options]
+# https://www.oio-blog.com/contents/pytest
+addopts = "-s -v"
+pythonpath = "src"
+testpaths = ["tests"]
